@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Kingdred';
-    src: url(Fonts/kingred.otf) format('truetype');
-    font-weight: normal;
-    font-style: normal;    
+  font-family: 'Kingdred';
+  src: url(Fonts/kingred.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;    
 }
 
 :root{
@@ -12,59 +12,62 @@
   --card: #f2d7a0;
 }
 
+
 body {
   padding: 0;
   margin: 0;
+  background-color: #63370c;
 }
 
+/* navigation bar */
 .nav-bar {
-    border: 2px dashed #864406b9;
-    border-radius: 30px;
-    justify-self: center;
-    width: 70%;
-    margin-left: 6.4vw;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    z-index: -2;
+  border: 2px dashed #864406b9;
+  border-radius: 30px;
+  justify-self: center;
+  width: 70%;
+  margin-left: 6.4vw;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  z-index: -2;
 }
 
 .nav-bar img {
-    position: absolute;
-    width: 90px;
-    border-radius: 200px;
-    border: 2px solid black;
-    margin-top: -6px;;
-    transition: 0.6s;
-    z-index: 0;
+  position: absolute;
+  width: 90px;
+  border-radius: 200px;
+  border: 2px solid black;
+  margin-top: -6px;;
+  transition: 0.6s;
+  z-index: 0;
 }
 
 .nav-bar img:hover {
-    cursor: pointer;
-    transform: scale(1.02);
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    background-color:#895D39;
-    border: 2px solid black;
-    border-radius: 40px;
-    padding: 14px;
-    gap: 2vw;
-    width: 88%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color:#895D39;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 14px;
+  gap: 2vw;
+  width: 88%;
 }
 
 .nav-links li a {
-    padding: 0.2rem 1.2rem;
-    color: var(--card);
-    background:rgba(255,255,255,0.06);
-    text-transform: uppercase;
-    border-radius: 40px;
-    text-decoration: none;
-    transition: 0.3s ease-out;
-    letter-spacing: 0.2px;
-    z-index: 10;
+  padding: 0.2rem 1.2rem;
+  color: var(--card);
+  background:rgba(255,255,255,0.06);
+  text-transform: uppercase;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+  letter-spacing: 0.2px;
+  z-index: 10;
 }
 
 .nav-links li a:hover {
@@ -73,9 +76,9 @@ body {
 }
 
 .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    margin-top:30px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-top:30px;
 }
 
 html, body {
@@ -83,20 +86,20 @@ html, body {
   margin: 0px;
 }
 
+/* main cotent */
 main {
   align-items: center;
   justify-content: center;
 }
 
+/* looping video & menu button */
 .video_select {
   margin: 0 auto;
   padding: 0px;
-  width: fit-content;
-  position: relative;
-  display: inline-flexbox;
-  height: fit-content;
   width: 100%;
-  overflow: none;
+  position: relative;
+  display: flex;
+  height: auto;
 }
 
 .menu_bar li a:hover {
@@ -135,15 +138,16 @@ main {
 }
 
 video {
-  width: 100%;
+  width: 100vw;
+  height: auto;
   display: block;
   pointer-events: none;
   user-select: none;
   object-fit: cover;
   z-index: -4;
-  image-resolution: 60%;
 }
 
+/* featured items sections */
 .features {
   margin-top: 2.4vw;
   padding-left: 50px;
@@ -153,26 +157,31 @@ video {
   color: var(--card);
 }
 
-.pep_b {
+.featured_items {
+  justify-content: center;
   align-items: center;
+  display: flex;
   width: 90%;
-  margin: 0 auto;
-  margin-left: 30px;
+  margin: 0px auto 30px;
   margin-top: 20px;
   margin-bottom: 30px;
-  justify-content: space-between;
-  display:inline-flex;
   background-color: var(--f-section);
-  border: 5px solid color(none);
+  border: 5px;
   border-radius: 50px;
-  padding: 35px;
+  padding: 50px;
 }
- 
 
+@media (max-width: 768px) {  /* adjustments for mobile viewing */
+  .featured_items {
+    padding: 20px; 
+    border-radius: 15px;
+  }
+}
 
+/* pepermint hot chocolate section */
 .feature_pep_sec {
   justify-content:space-between;
-  align-items: left;
+  text-align: left;
 }
 
 .pep_img {
@@ -190,7 +199,6 @@ video {
 
 .pep_text_position p {
   padding-left: 2em;
-  text-indent: -0.65em;
   margin-left: 0px;
   margin-top: -18px;
   font-size: 2.2vw;
@@ -199,28 +207,16 @@ video {
   line-height: 1.2;
 }
 
-.apple_sec {
-  width: 90%;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  justify-content: space-between;
-  display:flex;
-  background-color: var(--f-section);
-  border: 5px solid color(none);
-  border-radius: 40px;
-  padding: 40px;
-}
 
+/* apple cake section */
 .apple_img {
   width: 50%;
+  height: auto;
   border-radius: 30px;
-  padding-left: 0px;
 }
 
 .feature_apple h3{
   text-align: right;
-  margin-left:250px;
   margin-top: 1px;
   font-size: 3.4vw;
   font-family: 'kingdred';
@@ -228,45 +224,29 @@ video {
 
 .feature_apple p {
   padding-left: 2em;
-  text-indent: -0.65em;
-  text-align: left;
-  margin-left: 20px;
-  margin-top: -20px;
+  text-align: right;
   font-size: 2.2vw;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 9vw;
   padding-left: 1em;
   font-family: 'none';
   line-height: 1.2;
 }
 
-.eggnog_sec {
-  width: 90%;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  justify-content: space-between;
-  display:flex;
-  background-color: var(--f-section);
-  border: 5px solid color(none);
-  border-radius: 40px;
-  padding: 40px;
-}
-
+/* eggnog latte section */
 .feature_eggnog h3 {
   margin-left:10px;
-  margin-top: 1px;
+  margin-top: 0px;
   font-size: 3.4vw;
   font-family: 'kingdred';
 }
 
 .feature_eggnog p {
   padding-left: 2em;
-  text-indent: -0.65em;
   margin-left: 20px;
-  margin-top: -20px;
+  margin-top: 0px;
   font-size: 2.2vw;
   padding: 15px;
-  padding-left: 45;
   font-family: 'none';
   line-height: 1.2;
 }
@@ -278,10 +258,9 @@ video {
   padding-left: 0px;
 }
 
-
+/* footer */
 .site-footer {
   margin-top: 1.75rem;
-  padding: 1.0rem 0;
   background: linear-gradient(180deg, #5c3311, #2b180a);
   color: #f7e4c5;
   border-top: 2px solid rgba(255, 245, 220, 0.15);
@@ -300,7 +279,7 @@ video {
   color: #f7e4c5;
   font-size: 0.95rem;
   padding-left: 0px;
-  margin-left: 11px;
+  margin-left: 20px;
   padding: 2px;
 }
 
@@ -325,7 +304,7 @@ video {
 }
 
 .footer-info img {
-  margin-top: 10px;
-  margin-left: -8px;
-  width: 400px;
+  margin-top: 15px;
+  width: 200px;
+  padding: 3px;
 }

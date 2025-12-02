@@ -4,39 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brew on Cordonva</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <div class="nav-logo">
-        <img src="images_videos/The_Brew_logo.jpg" alt="Logo">
-    </div>
-    <nav class="navbar" href="navbar">
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-<body style="background-color: #d5b295;">
+<body>
 
-    <ul class="menu_bar"> 
-        <li><a href="menu.html">Menu</a></li>
-    </ul>
-    <video width="600" height="600" autoplay loop muted>
-        <source src="images_videos/coffee_video.mp4" type="video/mp4">
-    </video>
-    <section class="features_sec">
-
-    <h1 class="features"><strong>Features</strong></h1>
-    </section>
-    <footer>
+    <nav class="nav-bar">
         <div>
-            <p>&copy; 2025 The Brew on Cordova</p>
-            <p>1423 Cordova drive, Vancouver BC V5R S9T</p>
-            <p>thebrew@cordova.brew.ca</p>
-            <p> +1 (778) 345-5612</p>
+            <!-- Hero Image -->
+            <a href="index.html"><img src="pictures and visuals/The_Brew_logo.jpg" alt="Logo"></a>
         </div>
+            <!-- Nav bar -->
+            <div>   
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+            <!-- video and menu bar -->
+        <section class="video_select">
+            <div>
+                <video autoplay loop muted>
+                    <source src="pictures and visuals/web_vid_coffee_pour.mp4" type="video/mp4">
+                </video>
+                <ul class="menu_bar"> 
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </div>
+        </section>
+                    <!-- featured items header -->
+        <h2 class="features"><strong>Featured Items</strong></h2>
+                <!-- peppermint hot chocolate section -->
+        <section class="featured_items">
+            <div class="feature_pep_sec">
+                <div class="pep_text_position">
+                    <h3>Peppermint Hot Chocolate </h3>
+                    <p>Rich cocoa blended with cool peppermint, topped with minty peppermint crumble and our homemade whipped cream </p>
+                </div>
+            </div>
+            <img class="pep_img" src="pictures and visuals/peppermint_hot_chocolate_use.JPG" alt="peppermint_hot_chocolate">  
+        </section>
 
-    </footer>
+                <!-- apple cake section -->
+        <section class="featured_items">
+            <img class="pep_img" src="pictures and visuals/apple_cake_slice.jpg" alt="apple_cake_img">  
+            <div>
+                <div class="feature_apple">
+                    <h3>Apple cake </h3>
+                    <p>Freshly baked pie with espresso-infused apple syrup, baked with juicy apple slices, topped with cinnamon and whipped cream</p>
+                </div>
+            </div>
+        
+        </section>
+
+                <!-- eggnog feature section -->
+        <section class="featured_items">
+            <div>
+                <div class="feature_eggnog">
+                    <h3>Eggnog Latte </h3>
+                    <p>Espresso blended with creamy eggnog, finished with our homemade whipped cream, cinnamon and a sprinkle of nutmeg<p>
+                </div>
+            </div>
+            <img class="eggnog_img" src="pictures and visuals/eggnog_latte_pic_home_page.jpg" alt="apple_slice">  
+        </section>
+    </main>
+                        <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-inner container">
+
+            <div class="footer-info">
+                <p><strong>The Brew on Cordova</strong></p>
+                <p>1423 Cordova Drive, Vancouver BC <br>V5R S9T</p>
+                <p><a href="mailto:thebrew@cordova.ca">thebrew@cordova.ca</a></p>
+                <p>+1 (778) 345-5612</p>
+                
+            </div>
+                    <!-- footer logo img -->
+            <div class="footer-info">
+                <img src="pictures and visuals/The_brew_transparent_cropped.png" alt="Logo">
+                <p>&copy; 2025 The Brew on Cordova. All rights reserved.</p>
+            </div>
+        </div>
 </body>
-
 </html>
